@@ -1,6 +1,13 @@
 // Retrieve tasks and nextId from localStorage
 let taskList = JSON.parse(localStorage.getItem("tasks"));
 let nextId = JSON.parse(localStorage.getItem("nextId"));
+const modal = $('.modal');
+const openModal = $('#open-modal');
+
+openModal.on('click', function() {
+    modal.style.display = 'block';
+    console.log('Hello');
+});
 
 // Todo: create a function to generate a unique task id
 function generateTaskId() {
@@ -9,7 +16,10 @@ function generateTaskId() {
 
 // Todo: create a function to create a task card
 function createTaskCard(task) {
-
+    const taskCard = $('<div>');
+    taskCard.addClass('card task-card draggable my-3');
+    taskCard.attr('data-task-id', task.id);
+    const taskCardHeader = $('<div>').addClass('card-header h4').text(project.name);
 }
 
 // Todo: create a function to render the task list and make cards draggable
