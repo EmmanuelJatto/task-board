@@ -5,7 +5,7 @@ const modal = $('.modal');
 const openModal = $('#open-modal');
 
 openModal.on('click', function() {
-    modal.style.display = 'block';
+    modal.css('display', 'block');
     console.log('Hello');
 });
 
