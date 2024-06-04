@@ -7,5 +7,5 @@ There were many challenges that I faced while creating this task board.  One cha
 
 ![Task Board Screenshot](./assets/images/taskboard-screenshot.jpg)
 
-[Task ]
+[Task Board Deployable Link](https://emmanueljatto.github.io/task-board/)
 
